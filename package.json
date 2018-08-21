@@ -1,0 +1,11 @@
+{
+  "name": "personal-boiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/stanley-roache/personal-boiler.git",
+  "author": "stanley-roache <stan.roache@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.15.2"
+  }
+}
