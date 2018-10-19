@@ -49,17 +49,32 @@
       ]
     }
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "format": "prettier-standard 'src/**/*.js'",
-    "eject": "react-scripts eject"
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/registerServiceWorker.js",
+      "!src/index.js",
+      "!src/components/index.js",
+      "!src/containers/index.js",
+      "!src/state/index.js",
+      "!src/utilities/index.js",
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier-standard 'src/**/*.js'",
+    "eject": "react-scripts eject"
+  }
 }
